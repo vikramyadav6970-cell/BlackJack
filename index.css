@@ -28,3 +28,21 @@ button{
     margin-top: 2px;
 }
 
+button:hover{
+    color: #016f32;
+    width: 150px;
+    background-color: rgb(165, 119, 0);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#lost{
+    max-width: 500px;
+    height: 300px;
+}

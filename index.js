@@ -10,6 +10,8 @@ let cardsEl = document.getElementById("cards-el")
 
 let playerEl = document.getElementById("player-el")
 
+let lostEl= document.getElementById("lost")
+
 let player = {
     name: "vikram",
     chips: 500
@@ -36,6 +38,7 @@ function startGame(){
     sum = firstCard + secondCard
     cards = [firstCard, secondCard]
     playerEl.textContent = player.name + ": ₹" + player["chips"]
+    lostEl.src=""
 
     renderGame()
 }
@@ -56,6 +59,7 @@ else if(sum===21){
 else{
     message = "You are out of the game"
     isAlive = false;
+    lostEl.src="images/lost.gif"
 }
 messageEl.textContent = message
 }
